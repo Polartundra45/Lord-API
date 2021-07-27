@@ -142,6 +142,8 @@ body {
 }
 
 .search-button {
+    background-color: grey;
+    color: white;
     font-size: 1.3em;
     font-weight: bold;
     display: block;
@@ -154,6 +156,7 @@ body {
 }
 
 .search-button:hover {
+    color: black;
     cursor: pointer;
     background-color: lightgray;
 }
@@ -232,7 +235,7 @@ body {
     }
 
     .book-image {
-        width: 80%;
+        width: 60%;
     }
 
     .book-image img {
@@ -241,7 +244,7 @@ body {
 
     .book-image p {
         width: 100%;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .movie-containers {
@@ -250,6 +253,12 @@ body {
 
     .movie-containers img {
         width: 100%;
+    }
+
+    .character-info {
+        text-align: center;
+        padding: 0;
+        width: 50%;
     }
 }
  
