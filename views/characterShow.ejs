@@ -1,0 +1,20 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+<body>
+    <h1 class="logo">Lord of the Rings</h1>
+    <%- include('./partials/navbar') %> 
+
+   <div class="character-container"> 
+        <h2 class="character-name"><%= charInfo.name %></h2>
+
+        <ul class="character-info">
+            <li>Race: <%= charInfo.race %></li>
+            <li>Birth: <%= charInfo.birth %></li>
+            <li>Death: <%= charInfo.death %></li>
+        </ul>
+    </div>
+
+    <a class="another-character" href="/characters">Search another character</a>
+
+</body>
+</html>

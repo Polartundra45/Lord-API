@@ -1,0 +1,19 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+<body>
+     <h1 class="logo">Lord of the Rings</h1>
+
+     <%- include('./partials/navbar') %> 
+
+     <h1 class="header">Character Search</h1>
+
+     <div class="form-container"> 
+          <form action='/characters/too' method="GET">
+               <input class="input-field" type="text" name="search" placeholder="Character Name">
+               <button class="search-button">SEARCH</button>
+          </form>
+     </div>
+   
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

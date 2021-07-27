@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: arial;
+    background-image: url('https://i.pinimg.com/originals/51/c7/f3/51c7f3756390efe1777c96778899dc76.jpg');
+}
+
+.back-button {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-left: 1em;
+}
+
+.quote {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 4em;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+
+.header {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.movie-container {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trilogy-container {
+    text-align: center;
+    width: 30%;
+}
+
+.trilogy-container h3 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.trilogy-container ul {
+    line-height: 2em;
+    list-style-type: none;
+    padding: 0;
+}
+
+.trilogy-container ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.trilogy-container ul a:hover {
+    text-decoration: underline;
+} 
+
+.content-container {
+    margin-top: 4em;
+}
+
+.book-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+}
+
+.book-title p a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+.book-title p a:hover {
+    text-decoration: underline;
+}
+
+.book-name {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.book-image {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.book-image img {
+    width: 300px;
+}
+
+.book-image p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.movie-containers {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.movie-containers img {
+    width: 300px;
+}
+
+.movie-info {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
+
+.form-container {
+  
+    padding: 20px;
+    text-align: center;
+}
+
+.input-field {
+    width: 20%;
+    font-size: 1.5em;
+}
+
+.search-button {
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    padding: 5px 25px 5px 25px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.another-character {
+    text-align: center;
+    display: block;
+    margin-top: 2em;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.another-character:hover {
+    text-decoration: underline;
+}
+
+.character-container {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.character-name {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.character-info {
+    list-style-type: none;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.error-message {
+    margin-top: 3em;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+
+    .quote {
+        text-align: center;
+        margin-top: 5em;
+        width: 85%;
+        font-size: 1.3em;
+    }
+
+    .input-field {
+        width: 70%;
+    }
+
+    .movie-container {
+        margin-top: 2em;
+        flex-direction: column;
+    }
+
+    .trilogy-container {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .content-container {
+        margin-top: 2em;
+    }
+
+    .book-title {
+        width: 80%;
+        margin-bottom: 2em;
+    }
+
+    .book-name {
+        text-align: center;
+    }
+
+    .book-image {
+        width: 80%;
+    }
+
+    .book-image img {
+        width: 100%;
+    }
+
+    .book-image p {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .movie-containers {
+        width: 80%;
+    }
+
+    .movie-containers img {
+        width: 100%;
+    }
+}
+ 

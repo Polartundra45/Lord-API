@@ -1,0 +1,36 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+<body>
+    <h1 class="logo">Lord of the Rings</h1>
+
+    <%- include('./partials/navbar') %> 
+
+    <a class="back-button" href="/movies">Back</a>
+    
+    <h1 class="header"><%= oneMovie[0].name %></h1>
+
+    <div class="movie-containers">
+        <% if (oneMovie[0].name === 'The Unexpected Journey') { %>
+            <img src="http://prodimage.images-bn.com/pimages/0794043165368_p0_v3_s1200x630.jpg">
+        <% } else if (oneMovie[0].name === 'The Desolation of Smaug') { %>  
+            <img src="https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg">
+        <% } else if (oneMovie[0].name === 'The Battle of the Five Armies') { %>  
+            <img src="https://m.media-amazon.com/images/M/MV5BODAzMDgxMDc1MF5BMl5BanBnXkFtZTgwMTI0OTAzMjE@._V1_.jpg">
+        <% } else if (oneMovie[0].name === 'The Fellowship of the Ring') { %> 
+            <img src="https://www.ticketscene.ca/uploads/event35983.crdownload">
+        <% } else if (oneMovie[0].name === 'The Two Towers ') { %> 
+            <img src="https://www.tangotheatres.com/wp-content/uploads/2021/03/LOTR-2.jpg">
+        <% } else if (oneMovie[0].name === 'The Return of the King') { %> 
+            <img src="https://www.tangotheatres.com/wp-content/uploads/2021/03/LOTR-3.jpg">
+        <% } %> 
+
+        <ul class="movie-info">
+            <li>Runtime: <%= oneMovie[0].runtimeInMinutes %> mins</li>
+            <li>Budget: <%= oneMovie[0].budgetInMillions %> million</li>
+            <li>Academy Award Nominations: <%= oneMovie[0].academyAwardNominations %></li>
+            <li>Academy Award Wins: <%= oneMovie[0].academyAwardWins %></li>
+            <li>Rotten Tomatoe Score: <%= oneMovie[0].rottenTomatoesScore %>%</li>
+        </ul>
+    </div>
+</body>
+</html>

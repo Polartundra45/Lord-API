@@ -1,0 +1,19 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+<body>
+    <h1 class="logo">Lord of the Rings</h1>
+    
+    <%- include('./partials/navbar') %>
+
+    <h1 class="header">Books</h1>
+   
+    <div class="content-container">
+        <% for (let data of bookObject) { %> 
+            <div class="book-title">
+                <p><a href="/books/<%= data._id %>"><%= data.name %></a></p>
+            </div>
+        <% } %> 
+    </div>
+
+</body>
+</html> 

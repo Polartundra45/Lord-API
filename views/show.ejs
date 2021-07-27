@@ -1,0 +1,41 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+<body>
+    <h1 class="logo">Lord of the Rings</h1>
+
+    <%- include('./partials/navbar') %> 
+    
+    <a class="back-button" href="/books">Back</a>
+
+    <h1 class="book-name"><%= specificBook.name %></h1>
+
+    <% if (specificBook.name === 'The Fellowship Of The Ring') { %> 
+        <div class="book-image">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91jBdaRVqML.jpg">
+            <p>The Fellowship of the Ring is the first of three volumes of the epic novel 
+                The Lord of the Rings by the English author J. R. R. Tolkien. It is followed 
+                by The Two Towers and The Return of the King. It takes place in the fictional 
+                universe of Middle-earth.
+            </p>
+        </div>
+    <% } else if (specificBook.name === 'The Return Of The King') { %> 
+        <div class="book-image">
+            <img src="https://r.wheelers.co/bk/large/978026/9780261103597.jpg">
+            <p>The Return of the King is the third and final volume of J. R. R. Tolkien's 
+                The Lord of the Rings, following The Fellowship of the Ring and The Two Towers. 
+                It was published in 1955. The story begins in the kingdom of Gondor, which is 
+                soon to be attacked by the Dark Lord Sauron.
+            </p>
+        </div>
+    <% } else { %> 
+        <div class="book-image">
+            <img src="https://i.harperapps.com/hcanz/covers/9780261103580/y648.jpg">
+            <p>The Two Towers is the second volume of J. R. R. Tolkien's high fantasy novel
+                The Lord of the Rings. It is preceded by The Fellowship of the Ring and 
+                followed by The Return of the King.
+            </p>
+        </div>
+    <% } %> 
+
+</body>
+</html>

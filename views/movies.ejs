@@ -1,0 +1,36 @@
+<%- include('./partials/head') %> 
+<link rel="stylesheet" href="/styles/page-styles.css">
+</head>
+<body>
+    <h1 class="logo">Lord of the Rings</h1>
+
+    <%- include('./partials/navbar') %> 
+
+    <h1 class="header">Movies</h1>
+ 
+    <div class="movie-container"> 
+        <div class="trilogy-container">
+            <h3>
+                <%= movieNames[1].name %> 
+            </h3>
+                <ul>
+                    <li><a href="/movies/<%= movieNames[2]._id %>"><%= movieNames[2].name %></a></li>
+                    <li><a href="/movies/<%= movieNames[3]._id %>"><%= movieNames[3].name %></a></li>
+                    <li><a href="/movies/<%= movieNames[4]._id %>"><%= movieNames[4].name %></a></li>
+                </ul>
+        </div>
+
+        <div class="trilogy-container">
+            <h3>
+                <%= movieNames[0].name %> 
+            </h3>
+                <ul>
+                    <li><a href="/movies/<%= movieNames[6]._id %>"><%= movieNames[6].name %></a></li>
+                    <li><a href="/movies/<%= movieNames[5]._id %>"><%= movieNames[5].name %></a></li>
+                    <li><a href="/movies/<%= movieNames[7]._id %>"><%= movieNames[7].name %></a></li>
+                </ul>
+        </div>
+    </div>
+
+</body>
+</html>
